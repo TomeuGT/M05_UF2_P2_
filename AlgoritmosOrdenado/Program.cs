@@ -148,12 +148,17 @@ namespace AlgoritmosOrdenado
         public void heapify(int[] array, int n, int i)
         {
             int largest = i;
+
             int l = 2 * i + 1;
+
             int r = 2 * i + 2;
+
             n = array.Length;
+
 
             if (l < n && array[l] > array[largest])
                 largest = l;
+
 
             if (r < n && array[r] > array[largest])
                 largest = r;
@@ -169,13 +174,21 @@ namespace AlgoritmosOrdenado
         public void Swap(int[] array, int position1, int position2)
         {
             int temp = array[position1];
+
             array[position1] = array[position2];
+
             array[position2] = temp;
         }
         public void HeapSort(int[] arr)
         {
             for (int i = array.Length / 2 - 1; i >= 0; i--)
+
+
+
                 heapify(array, array.Length, i);
+
+
+
 
             for (int i = array.Length - 1; i > 0; i--)
             {
